@@ -24,7 +24,7 @@ class UploadPath(object):
         self.path = sub_path
 
     def __call__(self, instance, filename):
-        return "gallery/%s/%s" % (instance.title, filename)
+        return "gallery/%s" % filename
 
 get_upload_path = UploadPath('GalleryPlugin')
 
